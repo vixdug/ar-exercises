@@ -19,3 +19,5 @@ puts "----------"
 p "The sum is #{Store.sum("annual_revenue")}"
 
 p "the average is #{Store.average("annual_revenue")}"
+
+ p "the number of stores over 1M revenue are/is #{Store.where("annual_revenue > ?", 1000000).count}"
